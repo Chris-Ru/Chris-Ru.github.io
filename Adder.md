@@ -27,3 +27,37 @@ Writing C++ code for microcontroller
     <summary>Software for Microcontroller</summary>
     
 </details>
+
+
+## Setting up Java Web Application
+<details>
+  <summary>Java setup, Maven build and Runtime Test!</summary>
+
+Java is two pieces (JDK and JRE), both parts are needed in order to run and build 
+```
+$ sudo apt update
+$ sudo apt upgrade
+```
+  
+Install Java Runtime Environment
+```
+$ sudo apt install default-jre
+$ java -version
+```
+  
+Install Java Development Kit
+```
+$ sudo apt install default-jdk
+$ javac -version
+```
+
+Maven is required to build project
+```
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt install maven
+$ mvn -version
+```
+
+### If one of these aren't working or installing properly, check that your linux OS is up-to-date
+</details>
