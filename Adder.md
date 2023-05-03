@@ -4,6 +4,7 @@
 Preparation before setup
 <details>
 <summary>Hardware Requirements</summary>
+
 ```
     - full-size breadboard
     - 5 LEDs(color of your choice)
