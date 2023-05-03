@@ -29,35 +29,50 @@ Writing C++ code for microcontroller
 </details>
 
 
-## Setting up Java Web Application
-<details>
-  <summary>Java setup, Maven build and Runtime Test!</summary>
 
-Java is two pieces (JDK and JRE), both parts are needed in order to run and build 
-```
-$ sudo apt update
-$ sudo apt upgrade
-```
-  
-Install Java Runtime Environment
-```
-$ sudo apt install default-jre
-$ java -version
-```
-  
-Install Java Development Kit
-```
-$ sudo apt install default-jdk
-$ javac -version
-```
+```java
+public class Sorting {
+    private final ArrayList<Integer> data = new ArrayList<>();
+    private final Duration timeElapsed;
 
-Maven is required to build project
-```
-$ sudo apt update
-$ sudo apt upgrade
-$ sudo apt install maven
-$ mvn -version
-```
+    public Sorting(int size, String method) {
+        Instant start = Instant.now();  // time capture -- start
+        // build an array
+        for (int i = 0; i < size; i++) {
+            data.add((int)(Math.random() * (size+1)));
+        }
+        // use Inheritance and Polymorphism to replace data.sort with your own algorithm
+        //BubbleSort.sort(data);
 
-### If one of these aren't working or installing properly, check that your linux OS is up-to-date
-</details>
+        switch(method) {
+            case "Selection Sort":
+                Selections.sort(data);
+                System.out.println();
+                break;
+            case "Bubble Sort":
+                BubbleSorts.sort(data);
+                System.out.println();
+                break;
+            case "Insertion Sort":
+                Insertions.sort(data);
+                break;
+            case "Merge Sort":
+                MergeSorts.sort(data);
+                break;
+            default:
+                System.out.println("This is an invalid Sort Selection");
+        }
+
+        Instant end = Instant.now();    // time capture -- end
+        this.timeElapsed = Duration.between(start, end);
+
+    }
+    public ArrayList<Integer> getData() {
+        return data;
+    }
+
+    public int getTimeElapsed() {
+        return timeElapsed.getNano();
+    }
+}
+```
