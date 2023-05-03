@@ -5,7 +5,7 @@ Preparation before setup
 <details>
 <summary>Hardware Requirements</summary>
 
-```
+```java
     - full-size breadboard
     - 5 LEDs(color of your choice)
     - 8 buttons
@@ -13,6 +13,7 @@ Preparation before setup
     - A computer with VSCode with PlatformIO extension to push C++ code to ESP or Arduino
         - Can also use Arduino IDE
 ```
+
 </details>
 
 Wiring Adder before code
