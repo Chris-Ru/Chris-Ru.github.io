@@ -45,7 +45,7 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
               - title: '<i class="fa-solid fa-file-lines"></i> Notes'
                 href: "https://chris-ru.github.io/notes/"
               - title: '<i class="fa-solid fa-floppy-disk"></i> Adder Guide'
-                href: "https://chris-ru.github.io/adder/"
+                href: "https://chris-ru.github.io/Adder/"
               # - title: '<i class="fa-solid fa-floppy-disk"></i> Test Prep'
               #   href: "https://chris-ru.github.io/testprep/"
               # - title: '<i class="fa-solid fa-floppy-disk"></i> Test Prep'
